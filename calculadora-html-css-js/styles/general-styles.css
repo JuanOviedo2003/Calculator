@@ -1,0 +1,160 @@
+/*reset styles*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/*Colors*/
+:root {
+    --coffe-color: #251605;
+    --pink-color: #c57b57;
+    --light-pink-color: #f1ab86;
+}
+
+/*Background*/
+main {
+    background-color: var(--coffe-color);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Calculator*/
+.calculator {
+    background-color: var(--pink-color);
+    width: 415px;
+    height: 600px;
+    border-radius: 4px;
+    box-shadow: -1px 4px 64px -5px rgba(0, 0, 0, 1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 4px solid papayawhip;
+}
+
+#answer {
+    grid-area: 1 / 1 / 2 / 5;
+    font-size: 15px;
+}
+
+#clean {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 15px;
+}
+
+#divide {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 20px;
+}
+
+#multiply {
+    grid-area: 2 / 3 / 3 / 4;
+    font-size: 14px;
+}
+
+#delete {
+    grid-area: 2 / 4 / 3 / 5;
+    font-size: 15px;
+}
+
+#siete {
+    grid-area: 3 / 1 / 4 / 2;
+    font-size: 15px;
+}
+
+#ocho {
+    grid-area: 3 / 2 / 4 / 3;
+    font-size: 15px;
+}
+
+#nueve {
+    grid-area: 3 / 3 / 4 / 4;
+    font-size: 15px;
+}
+
+#substract {
+    grid-area: 3 / 4 / 4 / 5;
+    font-size: 30px;
+}
+
+#cuatro {
+    grid-area: 4 / 1 / 5 / 2;
+    font-size: 15px;
+}
+
+#cinco {
+    grid-area: 4 / 2 / 5 / 3;
+    font-size: 15px;
+}
+
+#seis {
+    grid-area: 4 / 3 / 5 / 4;
+    font-size: 15px;
+}
+
+#add {
+    grid-area: 4 / 4 / 5 / 5;
+    font-size: 18px;
+}
+
+#uno {
+    grid-area: 5 / 1 / 6 / 2;
+    font-size: 15px;
+}
+
+#dos {
+    grid-area: 5 / 2 / 6 / 3;
+    font-size: 15px;
+}
+
+#tres {
+    grid-area: 5 / 3 / 6 / 4;
+    font-size: 15px;
+}
+
+#cero {
+    grid-area: 6 / 1 / 7 / 4;
+    font-size: 15px;
+}
+
+#result {
+    grid-area: 5 / 4 / 7 / 5;
+    font-size: 15px;
+}
+
+/*Buttons*/
+.button {
+    background-color: var(--light-pink-color);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+}
+
+#answer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 10px;
+    font-family: monospace;
+    font-size: xx-large;
+    background-color: papayawhip;
+}
+
+/*Result*/
+#result {
+    width: 80px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    background-color: var(--light-pink-color);
+}
